@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShopHomeController">
+   <children>
+      <TableView fx:id="tableView" layoutX="100.0" layoutY="100.0" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="product_id" prefWidth="75.0" text="Number" />
+          <TableColumn fx:id="product_name" prefWidth="159.0" text="Name" />
+            <TableColumn fx:id="product_price" prefWidth="97.0" text="Price" />
+            <TableColumn fx:id="product_description" prefWidth="267.0" text="Description" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="category_select" layoutX="100.0" layoutY="64.0" prefWidth="150.0" promptText="Select Category" />
+      <Button layoutX="674.0" layoutY="19.0" mnemonicParsing="false" onAction="#check_out" text="Check Out" />
+   </children>
+</AnchorPane>
